@@ -5,9 +5,13 @@ env:
     - secure: "i65H2q9Dabc8BPNR3s1DctEsILCe70gO3zchf9X+1cBp/MJyLZQgcxh6QsHEkBpV35E9eJ8zGgXnCl26YZq6phda8dcfm/+lSNcZRLRBZ5nXfBQR5IwohHHPUMi1tNW6OIdi0B10ZXPFDzPTI0qV40m4fln+qk19WiysXr9pcKigZxDwmhCotjtcC9jXVARpVUpcJAG6UTfTFEf7hAyh3UcYfLlNiDy1GKtNuFj6nD/IdkrazL0wujRBJvTaFJyihPvbXsziDRDFcmXOxmbDmVOA0SRW6wxeUPm6y1sw6n+2EYBGrCdlnY5oISpb1P2s414bF6csT80asV/4JSV83yaTo+Z+3gr6mUdHGfTM49v7r03JcbHBC/GQ2jo7j7vyFw/W8ApgPwhW5MkoE9OBO/ktlTsXXvsv3/F5VvP46GXgpgcYJCl4+GjqDGSX3O+nf2cDlGpvSkMF3cGmvOy766tllyRz09wvyJ/GV+vUjRIjcF7HJgTZC+YxHN9Pdn7yJZXLAWZSXesihn+cUmYBdZbtQM8UYrDmskVFH4lOH+4zf/Jd9XWO+GFSGTKIU54PJk2Bu6+d/Q7tZjo8zbwOOIfqCOpqgXX4BDZvB6CbSFkbmkSSCgW7JAxx6ehgZP39WDAyvMuF5FW7o/QX5IL6E+lhXe3ta0apCYMxHaEOyYM="
     - secure: "BRa/T6GyfHW/eyhKLo3E+IKFwi/rKJqjTmmDxjoOxN6t6bVNUGfwQJw/sXLuf8gYExElVfgIX9d59Emd0WLzTXEER9pE9lKlilYw7lEyqiDTnDVhIpq/pzyrCYw05j8WyiLLm3+cab2OiMtOqpIZhNrtJI1rDKvHou1qO6+5EpDVdD2/yhB1R+SifmkYiqEceqoSejzNdmRs7Nwf+WsQ+YP1AXvV5PpXg2KufktyQ2X9e1W8NRox6SueoziHhtbegM+EGYBL44VnssUSAJ/kGwMyVjaA0UlNQOFz7/D5bZ01Xe2ci5aeB+gPEsC6ztS/w+Ku6hdls96Bcwl3gwzGKdjqhpNuaS7bl++DcCmN/FfIUU3Jv/j9+cj70ycjJvX4DvUTCnTpHqoHZD/gA8oLnyeZ1G/4TCU75No195lKvJLV/ue5mSRKvVF/SCUbuKsYnc+GQXIFJrxbhtXrugDln70Zf8v4iW8FW9Mx7nMWlqeFKJoh+eEu6Bc8dc/J686swn/unTw7h6S9g19jtH//fQT8Fdr9Rs7plfoa9DDVFdIStCrBacnGh+QdKD9C9lCAHMif8HoeC38oECaNUuo51nAjJ6EK5vuAXdS+WKUeMvWL8ZbLbP0pKR3EnVeGM1U8zR1b447aK6nl2cTqzJAXuhD1BKI0O38HzRxjQ98PIGQ="
     - secure: "SDPtWNTW219jfN6ZKfudiAQ+iIXD9ZUZ7XudAg/xu6lnIl58ntfi0fLXchmGnudYpSI3+TKyQvFMeGF7yZTV4LsLS8sbGzvdNk8bbCciIo8bA/0J+oo4RYw6zZt+PemnuWbbNid4gxF/5mZmPT3Jdn8OHG+pFG5REPt1ErB4EIzjJIS0JvIrRjKPkYCYYsfeJokr+xxEAaiccPayom/ULUyFMoVd4M9btXvp2PaFzqj7cM5+b1//Gj87Lk61rJsSNVC4AgpUnj+P/eR7R5kBod/O+YhZToZqX8EBB7hDeyt+1ynwYrVI8o2Fq2SfQjIVyK+VvOs8GE2+ETUrdm7bqeDTuPzwufWHfKZ5/CMqoozrTtXxDy0xsqB6biQVJwezy2Gvka/bOgIeFcDmKZGJVQbkhg/i/1YFXo8eky+wLHO86JuYiiBX3vA4NihvKY9TC+fnaFDI5mFvxleH2y6W4SqZtd5+D4IJwksEGNWLPPPDZvLklDvi/zhgjRNa2yN8hnyczec0mTohlVufDXPf8cxI7QjfGnpV01BfkNPst4fwmce30bGo9ZGQNvhVAZcnakjAORSxy1JgcP0npBg/dpqXJYX9nod2S9pQNREh529qpwMB3EHhAg3wAOLD4y+LkGPzRtEnTuPZ4diU/ahCpsabkwiF5U+0nNl1E3WeNKU="
+    - secure: "Mxjg7lRgknmdpMn8Jmy16WYVzU6FrzmP0hoLawsT/vzaqpx+ybDHmVFFSVaXOWJH5akYsbuMwt/lTBmw5HG0uyI9PW9x41138ahgvxOXkhGxergVfbgypGWzP4H+nHc8PtKxx/+e1DY/BGYeweBi3hb2f9xa8XyraX+E7Tpkajvl5DyuOgo0FyG1Yatf2nUEK89jaSb5xQZ/6fVJkXX/W+pRQ3bDE9RSwqmJSj3RJf/oyPrJzTcxmj7yibhydLA1scHQ45K/6GkYTL/5j46OAGWdfkJ9wZxfKLzobhsoldgTMQbMWjkQAgkFzuR4Kx5QYN0lMvlFRaPHk4r+NNlhwMwch0xd5HzEgPxez2NsKTm2tKTpoasG0ihbyijZ0KdtHcjfbGHz1EyKNvrXbjxhYx5MktTQ2u/ENLA4hkm12ez7SnKdohbnHn8bMrcg2wbfxu7NQ6oJ8MJ/libq1ZsHCc0i0HineHMbbLLGwwrRPgs+Ww35gQWJdzoouHtMAXKqPxNp0HWykDIPErLoN9gHuYk/cZsFVlC/3kz9xemJoC9Ku2LkkIIPTQtdW8uWTQwAQtuQTSDuuoYGxd57CLNFodxoJqgp7qnNaO83uWUfXBT22GaKpGVOuwiFlm2jDmFh3QHCxT6Yosr3pP+81PNjnJn78iU/nvtw84QDflidFeE="
+
+if: tag IS present
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_b871b4e4db16_key -iv $encrypted_b871b4e4db16_iv -in server_rsa.enc -out ~/.ssh/server_rsa -d
+  - chmod 600 ~/.ssh/server_rsa
   - wget https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip
   - unzip terraform_0.11.3_linux_amd64.zip
 
@@ -15,7 +19,7 @@ script:
   - ./terraform init
   - ./terraform plan -out file.out
   - ./terraform apply file.out
-  - ssh -i ~/.ssh/server_rsa root@163.172.170.187 "chmod +x ./build.sh && ./build.sh"
+  - ssh -o "StrictHostKeyChecking no" -i ~/.ssh/server_rsa root@$(terraform output public_ip) "chmod +x ./build.sh && GITHUB_TOKEN=${GITHUB_TOKEN} ./build.sh"
 
 after_script:
   - ./terraform destroy -force
