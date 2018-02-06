@@ -19,7 +19,7 @@ script:
   - ./terraform init
   - ./terraform plan -out file.out
   - ./terraform apply file.out
-  - ssh -o "StrictHostKeyChecking no" -i ~/.ssh/server_rsa root@$(terraform output public_ip) "chmod +x ./build.sh && GITHUB_TOKEN=${GITHUB_TOKEN} ./build.sh"
+  - ssh -o "StrictHostKeyChecking no" -i ~/.ssh/server_rsa root@$(./terraform output public_ip) "chmod +x ./build.sh && GITHUB_TOKEN=${GITHUB_TOKEN} ./build.sh"
 
 after_script:
   - ./terraform destroy -force
