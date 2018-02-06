@@ -1,7 +1,5 @@
-language: go
+sudo: enabled
 
-go:
-  - 1.9.3
 env:
   global:
     - secure: "i65H2q9Dabc8BPNR3s1DctEsILCe70gO3zchf9X+1cBp/MJyLZQgcxh6QsHEkBpV35E9eJ8zGgXnCl26YZq6phda8dcfm/+lSNcZRLRBZ5nXfBQR5IwohHHPUMi1tNW6OIdi0B10ZXPFDzPTI0qV40m4fln+qk19WiysXr9pcKigZxDwmhCotjtcC9jXVARpVUpcJAG6UTfTFEf7hAyh3UcYfLlNiDy1GKtNuFj6nD/IdkrazL0wujRBJvTaFJyihPvbXsziDRDFcmXOxmbDmVOA0SRW6wxeUPm6y1sw6n+2EYBGrCdlnY5oISpb1P2s414bF6csT80asV/4JSV83yaTo+Z+3gr6mUdHGfTM49v7r03JcbHBC/GQ2jo7j7vyFw/W8ApgPwhW5MkoE9OBO/ktlTsXXvsv3/F5VvP46GXgpgcYJCl4+GjqDGSX3O+nf2cDlGpvSkMF3cGmvOy766tllyRz09wvyJ/GV+vUjRIjcF7HJgTZC+YxHN9Pdn7yJZXLAWZSXesihn+cUmYBdZbtQM8UYrDmskVFH4lOH+4zf/Jd9XWO+GFSGTKIU54PJk2Bu6+d/Q7tZjo8zbwOOIfqCOpqgXX4BDZvB6CbSFkbmkSSCgW7JAxx6ehgZP39WDAyvMuF5FW7o/QX5IL6E+lhXe3ta0apCYMxHaEOyYM="
@@ -14,6 +12,7 @@ before_install:
   - unzip terraform_0.11.3_linux_amd64.zip
 
 script:
+  - terraform init
   - terraform plan -out file.out
   - terraform apply file.out
   - $ ssh -i ~/.ssh/server_rsa root@163.172.170.187 "chmod +x ./build.sh && ./build.sh"
