@@ -9,7 +9,7 @@ env:
     - secure: "SDPtWNTW219jfN6ZKfudiAQ+iIXD9ZUZ7XudAg/xu6lnIl58ntfi0fLXchmGnudYpSI3+TKyQvFMeGF7yZTV4LsLS8sbGzvdNk8bbCciIo8bA/0J+oo4RYw6zZt+PemnuWbbNid4gxF/5mZmPT3Jdn8OHG+pFG5REPt1ErB4EIzjJIS0JvIrRjKPkYCYYsfeJokr+xxEAaiccPayom/ULUyFMoVd4M9btXvp2PaFzqj7cM5+b1//Gj87Lk61rJsSNVC4AgpUnj+P/eR7R5kBod/O+YhZToZqX8EBB7hDeyt+1ynwYrVI8o2Fq2SfQjIVyK+VvOs8GE2+ETUrdm7bqeDTuPzwufWHfKZ5/CMqoozrTtXxDy0xsqB6biQVJwezy2Gvka/bOgIeFcDmKZGJVQbkhg/i/1YFXo8eky+wLHO86JuYiiBX3vA4NihvKY9TC+fnaFDI5mFvxleH2y6W4SqZtd5+D4IJwksEGNWLPPPDZvLklDvi/zhgjRNa2yN8hnyczec0mTohlVufDXPf8cxI7QjfGnpV01BfkNPst4fwmce30bGo9ZGQNvhVAZcnakjAORSxy1JgcP0npBg/dpqXJYX9nod2S9pQNREh529qpwMB3EHhAg3wAOLD4y+LkGPzRtEnTuPZ4diU/ahCpsabkwiF5U+0nNl1E3WeNKU="
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_b871b4e4db16_key -iv $encrypted_b871b4e4db16_iv -in server_rsa.enc -out ~\/.ssh/server_rsa -d
+  - openssl aes-256-cbc -K $encrypted_b871b4e4db16_key -iv $encrypted_b871b4e4db16_iv -in server_rsa.enc -out ~/.ssh/server_rsa -d
   - wget https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip
   - unzip terraform_0.11.3_linux_amd64.zip
 
