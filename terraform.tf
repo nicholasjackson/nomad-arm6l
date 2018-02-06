@@ -1,7 +1,7 @@
 provider "scaleway" {}
 
 data "template_file" "bootscript" {
-  filename = "./install.sh"
+  template = "${file("./install.sh")}"
 
   vars {
     GOVERSION     = "go1.9.3.linux-armv6l"
@@ -20,6 +20,30 @@ resource "scaleway_server" "build" {
     type       = "l_ssd"
   }
 
+  provisioner "file" {
+    connection {
+      host        = "${scaleway_server.build.public_ip}"
+      type        = "ssh"
+      user        = "root"
+      private_key = "${file("${var.ssh_key}")}"
+    }
+
+    content     = "${data.template_file.bootscript.rendered}"
+    destination = "/tmp/script.sh"
+  }
+
+  provisioner "file" {
+    connection {
+      host        = "${scaleway_server.build.public_ip}"
+      type        = "ssh"
+      user        = "root"
+      private_key = "${file("${var.ssh_key}")}"
+    }
+
+    content     = "${file("build.sh")}"
+    destination = "/root/build.sh"
+  }
+
   provisioner "remote-exec" {
     connection {
       host        = "${scaleway_server.build.public_ip}"
@@ -28,7 +52,10 @@ resource "scaleway_server" "build" {
       private_key = "${file("${var.ssh_key}")}"
     }
 
-    inline = "${data.template_file.bootscript.rendered}"
+    inline = [
+      "chmod +x /tmp/script.sh",
+      "/tmp/script.sh args",
+    ]
   }
 }
 
