@@ -15,7 +15,7 @@ script:
   - ./terraform init
   - ./terraform plan -out file.out
   - ./terraform apply file.out
-  - $ ssh -i ~/.ssh/server_rsa root@163.172.170.187 "chmod +x ./build.sh && ./build.sh"
+  - ssh -i ~/.ssh/server_rsa root@163.172.170.187 "chmod +x ./build.sh && ./build.sh"
 
 after_script:
-  - terraform destroy
+  - ./terraform destroy -force
