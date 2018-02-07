@@ -14,3 +14,4 @@ builds:
 
     env:
       - CGO_ENABLED=1
+      - CC=gcc -m32
