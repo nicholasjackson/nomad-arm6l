@@ -1,5 +1,5 @@
 sudo: enabled
-language: generic
+language: bash
 
 env:
   global:
