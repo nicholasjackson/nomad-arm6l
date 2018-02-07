@@ -13,5 +13,5 @@ builds:
       - 6
 
     env:
-      - CGO_ENABLED=1
+      - CGO_ENABLED=0
       - CC=arm-linux-gnueabihf-gcc
