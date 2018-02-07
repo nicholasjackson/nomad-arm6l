@@ -4,13 +4,17 @@ data "template_file" "bootscript" {
   template = "${file("./install.sh")}"
 
   vars {
-    GOVERSION     = "go1.9.3.linux-armv6l"
-    NOMAD_VERSION = "v0.7.1"
+    go_version    = "go${var.go_version}.linux-armv6l"
+    nomad_version = "${var.nomad_version}"
   }
 }
 
+resource "random_id" "server_name" {
+  byte_length = 8
+}
+
 resource "scaleway_server" "build" {
-  name                = "arm7-build"
+  name                = "arm7-build-${random_id.server_name.dec}"
   image               = "3a1b0dd8-92e1-4ba2-aece-eea8e9d07e32"
   type                = "C1"
   dynamic_ip_required = true
@@ -20,6 +24,7 @@ resource "scaleway_server" "build" {
     type       = "l_ssd"
   }
 
+  # add the build script
   provisioner "file" {
     connection {
       host        = "${scaleway_server.build.public_ip}"
@@ -32,6 +37,7 @@ resource "scaleway_server" "build" {
     destination = "/tmp/script.sh"
   }
 
+  # add the install bootstrap script
   provisioner "file" {
     connection {
       host        = "${scaleway_server.build.public_ip}"
@@ -44,6 +50,7 @@ resource "scaleway_server" "build" {
     destination = "/root/build.sh"
   }
 
+  # bootstrap the server
   provisioner "remote-exec" {
     connection {
       host        = "${scaleway_server.build.public_ip}"

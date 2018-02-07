@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 go get github.com/goreleaser/goreleaser
 git clone https://github.com/nicholasjackson/nomad-arm6l.git
 
