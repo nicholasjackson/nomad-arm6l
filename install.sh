@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install -y git build-essential curl
+sudo apt-get install -y git build-essential curl libc6-dev-i386
 
 curl -L -o ~/${go_version}.tar.gz https://dl.google.com/go/${go_version}.tar.gz 
 tar -C /usr/local -xzf ~/${go_version}.tar.gz
