@@ -3,7 +3,7 @@ builds:
   -
     # Path to main.go file or main package.
     # Default is `.`.
-    ldflags: -X github.com/hashicorp/nomad/version.GitCommit={{ .Commit }}
+    ldflags: -w -extldflags "-static" -X github.com/hashicorp/nomad/version.GitCommit={{ .Commit }}
    
     goos:
       - linux
@@ -14,4 +14,4 @@ builds:
 
     env:
       - CGO_ENABLED=1
-      - CC=gcc -m32
+      - CC=arm-linux-gnueabihf-gcc
