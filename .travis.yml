@@ -1,5 +1,6 @@
-sudo: enabled
-language: c
+language: bash
+
+sudo: required
 
 env:
   global:
