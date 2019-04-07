@@ -8,5 +8,5 @@ variable "go_version" {
 
 variable "nomad_version" {
   description = "Nomad tag or branch to build"
-  default     = "v0.7.1"
+  default     = "v0.8.7"
 }
