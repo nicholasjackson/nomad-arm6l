@@ -62,6 +62,7 @@ resource "scaleway_server" "build" {
     inline = [
       "chmod +x /tmp/script.sh",
       "/tmp/script.sh args",
+      "sudo systemctl restart sshd",
     ]
   }
 }
