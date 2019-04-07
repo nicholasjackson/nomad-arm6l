@@ -3,7 +3,7 @@ variable "ssh_key" {
 }
 
 variable "go_version" {
-  default = "1.9.3"
+  default = "1.12.2"
 }
 
 variable "nomad_version" {
