@@ -1,7 +1,7 @@
 FROM amd64/debian:9 as builder
 
 ENV go_version=go1.12.2.linux-amd64
-ARG nomad_version="v0.8.7"
+ARG nomad_version="v0.9.0"
 ENV GOPATH=/root/go
 ENV PATH="$PATH:/usr/local/go/bin:/root/go/bin"
 
