@@ -1,10 +1,6 @@
 builds:
   # You can have multiple builds defined as a yaml list
   -
-    # Path to main.go file or main package.
-    # Default is `.`.
-    ldflags: -w -extldflags "-static" -X github.com/hashicorp/nomad/version.GitCommit={{ .Commit }}
-   
     goos:
       - linux
     goarch:
