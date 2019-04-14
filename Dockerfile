@@ -1,12 +1,11 @@
-FROM amd64/debian:9 as builder
+FROM amd64/ubuntu:16.04 as builder
 
 ENV go_version=go1.12.2.linux-amd64
 ARG nomad_version="v0.9.0"
 ENV GOPATH=/root/go
 ENV PATH="$PATH:/usr/local/go/bin:/root/go/bin"
 
-RUN apt-get update \
-  && apt-get install -y sudo
+RUN apt-get update && apt-get install -y sudo
 
 COPY install.sh /install.sh
 RUN bash /install.sh
